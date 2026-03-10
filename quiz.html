@@ -1,11 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
-    
+    <div>
+        <h3>What is your name?</h3>
+
+        <input  type="radio" type="checkbox" id="akash" name="person" value="akash" onclick="correct()">
+        <label for="akash">Akash</label><br>
+
+        <input type="radio" type="checkbox" id="shiva" name="person" value="shiva" onclick="incorrect()">
+        <label for="shiva">Shiva</label><br>
+
+        <input type="radio" type="checkbox" id="abhishek" name="person" value="abhishek" onclick="incorrect()">
+        <label for="abhishek">Abhishek</label><br>
+
+        <input type="radio" type="checkbox" id="saathvik" name="person" value="saathvik" onclick="incorrect()">
+        <label for="saathvik">Saathvik</label><br>
+        <p id="values"></p>
+    </div>
+    <script>
+        function correct(){
+            document.getElementById("values").innerHTML = "Correct Answer"
+        }
+        function incorrect(){
+            document.getElementById("values").innerHTML = "Incorrect Answer"
+        }
+        
+    </script>
+
 </body>
+
 </html>
