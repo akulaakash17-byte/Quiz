@@ -22,16 +22,38 @@
 
         <input type="radio" type="checkbox" id="saathvik" name="person" value="saathvik" onclick="incorrect()">
         <label for="saathvik">Saathvik</label><br>
-        <p id="values"></p>
+        <p id="a1"></p>
+    </div>
+
+    <div>
+        <h3>What is the purpose of js?</h3>
+
+        <input  type="radio" type="checkbox" id="q2a" name="js" value="akash" onclick="incorrect()">
+        <label for="akash">To compile the code</label><br>
+
+        <input type="radio" type="checkbox" id="q2b" name="js" value="shiva" onclick="incorrect()">
+        <label for="shiva">To make stylings in website</label><br>
+
+        <input type="radio" type="checkbox" id="q2c" name="js" value="abhishek" onclick="correct()">
+        <label for="abhishek">To communicate between browser and website</label><br>
+
+        <input type="radio" type="checkbox" id="q2d" name="js" value="saathvik" onclick="incorrect()">
+        <label for="saathvik">None of the above</label><br>
+        <p id="a2"></p>
     </div>
     <script>
         function correct(){
-            document.getElementById("values").innerHTML = "Correct Answer"
+            document.getElementById("a1").innerHTML = "Correct Answer"
         }
         function incorrect(){
-            document.getElementById("values").innerHTML = "Incorrect Answer"
+            document.getElementById("a1").innerHTML = "Incorrect Answer"
         }
-        
+        function correct(){
+            document.getElementById("a2").innerHTML = "Correct Answer"
+        }
+        function incorrect(){
+            document.getElementById("a2").innerHTML = "Incorrect Answer"
+        }
     </script>
 
 </body>
