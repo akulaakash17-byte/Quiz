@@ -6,11 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script src="quiz.js"></script>
+    <link rel="stylesheet" href="quiz.css">
     
 </head>
 
 <body>
-    <div>
+  <div class="quiz-container">
+        <h2 class="title">JavaScript Quiz</h2>
+
+    
+    <div class="question">
         <h4>1. What is your name?</h4>
 
         <input type="radio" id="akash" name="person" value="akash" onclick="check(true ,'a1')">
@@ -27,7 +32,7 @@
         <p id="a1"></p>
     </div>
 
-    <div>
+    <div class="question">
         <h4>2. What is the purpose of js?</h4>
 
         <input type="radio" id="q2a" name="js" value="akash" onclick="check(false ,'a2')">
@@ -43,7 +48,7 @@
         <label for="q2d">d. None of the above</label><br>
         <p id="a2"></p>
     </div>
-    <div>
+    <div class="question">
         <h4>3. What does HTML stand for?</h4>
         <input type="radio" name="q3" onclick="check(false,'a3')"> <label>a. HighText Machine Language</label><br>
         <input type="radio" name="q3" onclick="check(true,'a3')"> <label>b. HyperText Markup Language</label><br>
@@ -53,7 +58,7 @@
         <p id="a3"></p>
     </div>
 
-    <div>
+    <div class="question">
         <h4>4. Which keyword is used to declare a constant variable in JS?</h4>
         <input type="radio" name="q4" onclick="check(false,'a4')"> <label>a. var</label><br>
         <input type="radio" name="q4" onclick="check(false,'a4')"> <label>b. let</label><br>
@@ -62,7 +67,7 @@
         <p id="a4"></p>
     </div>
 
-    <div>
+    <div class="question">
         <h4>5. Which tag is used to link an external CSS file?</h4>
         <input type="radio" name="q5" onclick="check(true,'a5')"> <label>a. &lt;link&gt;</label><br>
         <input type="radio" name="q5" onclick="check(false,'a5')"> <label>b. &lt;style&gt;</label><br>
@@ -71,7 +76,7 @@
         <p id="a5"></p>
     </div>
 
-    <div>
+    <div class="question">
         <h4>6. Which function is used to print content to the browser console?</h4>
         <input type="radio" name="q6" onclick="check(false,'a6')"> <label>a. print()</label><br>
         <input type="radio" name="q6" onclick="check(true,'a6')"> <label>b. console.log()</label><br>
@@ -80,7 +85,7 @@
         <p id="a6"></p>
     </div>
 
-    <div>
+    <div class="question"> 
         <h4>7. Which attribute is used to provide the path for an image?</h4>
         <input type="radio" name="q7" onclick="check(false,'a7')"> <label>a. href</label><br>
         <input type="radio" name="q7" onclick="check(true,'a7')"> <label>b. src</label><br>
@@ -89,7 +94,7 @@
         <p id="a7"></p>
     </div>
 
-    <div>
+    <div class="question">
         <h4>8. Which of these is NOT a JavaScript data type?</h4>
         <input type="radio" name="q8" onclick="check(false,'a8')"> <label>a. Boolean</label><br>
         <input type="radio" name="q8" onclick="check(false,'a8')"> <label>b. String</label><br>
@@ -98,7 +103,7 @@
         <p id="a8"></p>
     </div>
 
-    <div>
+    <div class="question">
         <h4>9. Which tag is used to create an unordered list?</h4>
         <input type="radio" name="q9" onclick="check(false,'a9')"> <label>a. &lt;ol&gt;</label><br>
         <input type="radio" name="q9" onclick="check(true,'a9')"> <label>b. &lt;ul&gt;</label><br>
@@ -107,7 +112,7 @@
         <p id="a9"></p>
     </div>
 
-    <div>
+    <div class="question">
         <h4>10. Which operator checks for both value and type equality?</h4>
         <input type="radio" name="q10" onclick="check(false,'a10')"> <label>a. ==</label><br>
         <input type="radio" name="q10" onclick="check(true,'a10')"> <label>b. ===</label><br>
@@ -115,6 +120,7 @@
         <input type="radio" name="q10" onclick="check(false,'a10')"> <label>d. !=</label><br>
         <p id="a10"></p>
     </div>
+  </div>
     <div>
         <button onclick="score()">Submit</button>
         <p id="result"></p>

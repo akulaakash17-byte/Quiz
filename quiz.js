@@ -11,10 +11,10 @@ let totalScore = 0;
             for (let i = 1; i <= 10; i++) {
                 let id = "a" + i;
                 if (answers[id] === true) {
-                    document.getElementById(id).innerHTML = "Correct Answer";
+                    document.getElementById(id).innerHTML = "<span class='correct'>Correct Answer</span>"
                     totalScore++;
                 } else {
-                    document.getElementById(id).innerHTML = "Incorrect Answer";
+                    document.getElementById(id).innerHTML = "<span class='incorrect'>Incorrect Answer</span>"
                 }
             }
 
