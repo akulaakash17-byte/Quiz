@@ -5,57 +5,140 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <script src="quiz.js"></script>
 </head>
 
 <body>
     <div>
-        <h3>What is your name?</h3>
+        <h4>1. What is your name?</h4>
 
-        <input  type="radio" type="checkbox" id="akash" name="person" value="akash" onclick="correct()">
-        <label for="akash">Akash</label><br>
+        <input type="radio" id="akash" name="person" value="akash" onclick="check(true ,'a1')">
+        <label for="akash">a. Akash</label><br>
 
-        <input type="radio" type="checkbox" id="shiva" name="person" value="shiva" onclick="incorrect()">
-        <label for="shiva">Shiva</label><br>
+        <input type="radio" id="shiva" name="person" value="shiva" onclick="check(false,'a1')">
+        <label for="shiva">b. Shiva</label><br>
 
-        <input type="radio" type="checkbox" id="abhishek" name="person" value="abhishek" onclick="incorrect()">
-        <label for="abhishek">Abhishek</label><br>
+        <input type="radio" id="abhishek" name="person" value="abhishek" onclick="check(false,'a1')">
+        <label for="abhishek">c. Abhishek</label><br>
 
-        <input type="radio" type="checkbox" id="saathvik" name="person" value="saathvik" onclick="incorrect()">
-        <label for="saathvik">Saathvik</label><br>
+        <input type="radio" id="saathvik" name="person" value="saathvik" onclick="check(false,'a1')">
+        <label for="saathvik">d. Saathvik</label><br>
         <p id="a1"></p>
     </div>
 
     <div>
-        <h3>What is the purpose of js?</h3>
+        <h4>2. What is the purpose of js?</h4>
 
-        <input  type="radio" type="checkbox" id="q2a" name="js" value="akash" onclick="incorrect()">
-        <label for="akash">To compile the code</label><br>
+        <input type="radio" id="q2a" name="js" value="akash" onclick="check(false ,'a2')">
+        <label for="q2a">a. To compile the code</label><br>
 
-        <input type="radio" type="checkbox" id="q2b" name="js" value="shiva" onclick="incorrect()">
-        <label for="shiva">To make stylings in website</label><br>
+        <input type="radio" id="q2b" name="js" value="shiva" onclick="check(false ,'a2')">
+        <label for="q2b">b. To make stylings in website</label><br>
 
-        <input type="radio" type="checkbox" id="q2c" name="js" value="abhishek" onclick="correct()">
-        <label for="abhishek">To communicate between browser and website</label><br>
+        <input type="radio" id="q2c" name="js" value="abhishek" onclick="check(true,'a2')">
+        <label for="q2c">c. To communicate between browser and website</label><br>
 
-        <input type="radio" type="checkbox" id="q2d" name="js" value="saathvik" onclick="incorrect()">
-        <label for="saathvik">None of the above</label><br>
+        <input type="radio" id="q2d" name="js" value="saathvik" onclick="check(false,'a2')">
+        <label for="q2d">d. None of the above</label><br>
         <p id="a2"></p>
     </div>
+    <div>
+        <h4>3. What does HTML stand for?</h4>
+        <input type="radio" name="q3" onclick="check(false,'a3')"> <label>a. HighText Machine Language</label><br>
+        <input type="radio" name="q3" onclick="check(true,'a3')"> <label>b. HyperText Markup Language</label><br>
+        <input type="radio" name="q3" onclick="check(false,'a3')"> <label>c. Hyperlink and Text Markup
+            Language</label><br>
+        <input type="radio" name="q3" onclick="check(false,'a3')"> <label>d. none of the above</label><br>
+        <p id="a3"></p>
+    </div>
+
+    <div>
+        <h4>4. Which keyword is used to declare a constant variable in JS?</h4>
+        <input type="radio" name="q4" onclick="check(false,'a4')"> <label>a. var</label><br>
+        <input type="radio" name="q4" onclick="check(false,'a4')"> <label>b. let</label><br>
+        <input type="radio" name="q4" onclick="check(true,'a4')"> <label>c. const</label><br>
+        <input type="radio" name="q4" onclick="check(false,'a4')"> <label>d. none of the above</label><br>
+        <p id="a4"></p>
+    </div>
+
+    <div>
+        <h4>5. Which tag is used to link an external CSS file?</h4>
+        <input type="radio" name="q5" onclick="check(true,'a5')"> <label>a. &lt;link&gt;</label><br>
+        <input type="radio" name="q5" onclick="check(false,'a5')"> <label>b. &lt;style&gt;</label><br>
+        <input type="radio" name="q5" onclick="check(false,'a5')"> <label>c. &lt;script&gt;</label><br>
+        <input type="radio" name="q5" onclick="check(false,'a5')"> <label>d. &lt;stylesheet&gt;</label><br>
+        <p id="a5"></p>
+    </div>
+
+    <div>
+        <h4>6. Which function is used to print content to the browser console?</h4>
+        <input type="radio" name="q6" onclick="check(false,'a6')"> <label>a. print()</label><br>
+        <input type="radio" name="q6" onclick="check(true,'a6')"> <label>b. console.log()</label><br>
+        <input type="radio" name="q6" onclick="check(false,'a6')"> <label>c. window.alert()</label><br>
+        <input type="radio" name="q6" onclick="check(false,'a6')"> <label>d. prompt()</label><br>
+        <p id="a6"></p>
+    </div>
+
+    <div>
+        <h4>7. Which attribute is used to provide the path for an image?</h4>
+        <input type="radio" name="q7" onclick="check(false,'a7')"> <label>a. href</label><br>
+        <input type="radio" name="q7" onclick="check(true,'a7')"> <label>b. src</label><br>
+        <input type="radio" name="q7" onclick="check(false,'a7')"> <label>c. link</label><br>
+        <input type="radio" name="q7" onclick="check(false,'a7')"> <label>d. stylesheet</label><br>
+        <p id="a7"></p>
+    </div>
+
+    <div>
+        <h4>8. Which of these is NOT a JavaScript data type?</h4>
+        <input type="radio" name="q8" onclick="check(false,'a8')"> <label>a. Boolean</label><br>
+        <input type="radio" name="q8" onclick="check(false,'a8')"> <label>b. String</label><br>
+        <input type="radio" name="q8" onclick="check(true,'a8')"> <label>c. Float</label><br>
+        <input type="radio" name="q8" onclick="check(false,'a8')"> <label>d. integer</label><br>
+        <p id="a8"></p>
+    </div>
+
+    <div>
+        <h4>9. Which tag is used to create an unordered list?</h4>
+        <input type="radio" name="q9" onclick="check(false,'a9')"> <label>a. &lt;ol&gt;</label><br>
+        <input type="radio" name="q9" onclick="check(true,'a9')"> <label>b. &lt;ul&gt;</label><br>
+        <input type="radio" name="q9" onclick="check(false,'a9')"> <label>c. &lt;li&gt;</label><br>
+        <input type="radio" name="q9" onclick="check(false,'a9')"> <label>d. all of the above</label><br>
+        <p id="a9"></p>
+    </div>
+
+    <div>
+        <h4>10. Which operator checks for both value and type equality?</h4>
+        <input type="radio" name="q10" onclick="check(false,'a10')"> <label>a. ==</label><br>
+        <input type="radio" name="q10" onclick="check(true,'a10')"> <label>b. ===</label><br>
+        <input type="radio" name="q10" onclick="check(false,'a10')"> <label>c. =</label><br>
+        <input type="radio" name="q10" onclick="check(false,'a10')"> <label>d. !=</label><br>
+        <p id="a10"></p>
+    </div>
+    <div>
+        <button onclick="score()">Submit</button>
+        <p id="result"></p>
+    </div>
     <script>
-        function correct(){
-            document.getElementById("a1").innerHTML = "Correct Answer"
-        }
-        function incorrect(){
-            document.getElementById("a1").innerHTML = "Incorrect Answer"
-        }
-        function correct(){
-            document.getElementById("a2").innerHTML = "Correct Answer"
-        }
-        function incorrect(){
-            document.getElementById("a2").innerHTML = "Incorrect Answer"
+        let totalScore = 0;
+
+        function score() {
+            function check(answer, id) {
+
+                if (answer === true) {
+                    document.getElementById(id).innerHTML = "Correct Answer"
+                    totalScore++;
+                } else {
+                    document.getElementById(id).innerHTML = "Incorrect Answer"
+                }
+            }
+            document.getElementById("result").innerHTML = "Your Total Score = " + totalScore + "/10";
+            if(totalScore <= 5){
+                document.getElementById("result").innerHTML = "Your Total Score = " + totalScore + "/10" + "Failed";
+            }else{
+                document.getElementById("result").innerHTML = "Your Total Score = " + totalScore + "/10" + "Passed";
+            }
         }
     </script>
-
 </body>
 
 </html>
