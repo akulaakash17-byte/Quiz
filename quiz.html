@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script src="quiz.js"></script>
+    
 </head>
 
 <body>
@@ -118,39 +119,7 @@
         <button onclick="score()">Submit</button>
         <p id="result"></p>
     </div>
-    <script>
-        let totalScore = 0;
-        let answers = {};
-
-        function check(answer,id){
-            answers[id] = answer;
-        }
-        function score() {
-
-            let totalScore = 0;
-
-            for (let i = 1; i <= 10; i++) {
-                let id = "a" + i;
-                if (answers[id] === true) {
-                    document.getElementById(id).innerHTML = "Correct Answer";
-                    totalScore++;
-                } else {
-                    document.getElementById(id).innerHTML = "Incorrect Answer";
-                }
-            }
-
-            let text = "Your Total Score = " + totalScore + "/10 ";
-
-            if (totalScore <= 5) {
-                text += "Failed";
-            } else {
-                text += "Passed";
-            }
-
-            document.getElementById("result").innerHTML = text;
-
-        }
-    </script>
+    
 </body>
 
 </html>
